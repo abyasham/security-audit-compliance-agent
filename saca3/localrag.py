@@ -91,9 +91,7 @@ def ollama_chat(user_input, system_message, vault_embeddings, vault_content, oll
         user_input_with_context = user_input + "\n\nRelevant Context:\n" + context_str
     
     conversation_history[-1]["content"] = user_input_with_context
-    
-    messages = [
-        {"role": "system", "content": system_message},
+    messages = [    {"role": "system", "content": system_message},
         *conversation_history
     ]
     
@@ -110,7 +108,7 @@ def ollama_chat(user_input, system_message, vault_embeddings, vault_content, oll
 # Parse command-line arguments
 print(NEON_GREEN + "Parsing command-line arguments..." + RESET_COLOR)
 parser = argparse.ArgumentParser(description="Ollama Chat")
-parser.add_argument("--model", default="deepseek-r1:14b", help="Ollama model to use (default: deepseek-r1:14b)")
+parser.add_argument("--model", default="deepseek-r1:8b", help="Ollama model to use (default: deepseek-r1:14b)")
 args = parser.parse_args()
 
 # Configuration for the Ollama API client
@@ -131,7 +129,7 @@ if os.path.exists("vault.txt"):
 print(NEON_GREEN + "Generating embeddings for the vault content..." + RESET_COLOR)
 vault_embeddings = []
 for content in vault_content:
-    response = ollama.embeddings(model='mxbai-embed-large', prompt=content)
+    response = ollama.embeddings(model='mxbai-embed-large:latest', prompt=content)
     vault_embeddings.append(response["embedding"])
 
 # Convert to tensor and print embeddings

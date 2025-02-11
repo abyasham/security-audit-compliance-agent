@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langgraph
+chromadb
+sentence-transformers
+unstructured[local-inference]
+pandas
+openpyxl
+pdfminer.six
+python-magic
+ollama

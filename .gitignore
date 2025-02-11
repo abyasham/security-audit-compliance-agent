@@ -1,3 +1,5 @@
+.venv/
+venv/
 bin/
 include/
 lib/

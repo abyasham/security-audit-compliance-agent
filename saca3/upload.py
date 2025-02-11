@@ -4,6 +4,7 @@ from tkinter import filedialog
 import PyPDF2
 import re
 import json
+import pandas as pd
 
 # Function to convert PDF to text and append to vault.txt
 def convert_pdf_to_text():
@@ -104,9 +105,46 @@ def upload_jsonfile():
                     vault_file.write(chunk.strip() + "\n")  # Two newlines to separate chunks
             print(f"JSON file content appended to vault.txt with each chunk on a separate line.")
 
+# Function to upload a CSV file and append to vault.txt
+def upload_csvfile():
+    try:
+        # Check if pandas is available
+        import pandas as pd
+    except ImportError:
+        print("Error: pandas library is not installed. Please install it first.")
+        return
+    
+    file_path = filedialog.askopenfilename(filetypes=[("CSV Files", "*.csv")])
+    if file_path:
+        try:
+            # Read the CSV file with pandas
+            df = pd.read_csv(file_path, header=0)
+            
+            # Convert DataFrame to a formatted string
+            text = df.to_json(orient='records', force_ascii=False)
+            
+            # Normalize whitespace and clean up text
+            text = re.sub(r'\s+', ' ', text).strip()
+            
+            # Split text into chunks by lines, creating a new chunk for each row
+            chunks = text.split('\n')
+            
+            with open("vault.txt", "a", encoding="utf-8") as vault_file:
+                for chunk in chunks:
+                    if chunk:  # Only write non-empty chunks
+                        vault_file.write(chunk.strip() + "\n")
+            
+            print(f"CSV file content appended to vault.txt successfully.")
+        except pd.errors.EmptyDataError:
+            print("Error: The CSV file is empty.")
+        except pd.errors.ParserError as e:
+            print(f"Error parsing CSV file: {str(e)}")
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+
 # Create the main window
 root = tk.Tk()
-root.title("Upload .pdf, .txt, or .json")
+root.title("Upload .pdf, .txt, .json, or .csv")
 
 # Create a button to open the file dialog for PDF
 pdf_button = tk.Button(root, text="Upload PDF", command=convert_pdf_to_text)
@@ -119,6 +157,10 @@ txt_button.pack(pady=10)
 # Create a button to open the file dialog for JSON file
 json_button = tk.Button(root, text="Upload JSON File", command=upload_jsonfile)
 json_button.pack(pady=10)
+
+# Create a button to open the file dialog for CSV file
+csv_button = tk.Button(root, text="Upload CSV File", command=upload_csvfile)
+csv_button.pack(pady=10)
 
 # Run the main event loop
 root.mainloop()

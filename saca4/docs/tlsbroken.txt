@@ -1,0 +1,555 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       192.168.4.22          104.154.89.105        TCP      78     56264 → 1010 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=64 TSval=3944737471 TSecr=0 SACK_PERM
+
+Frame 1: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.057801       104.154.89.105        192.168.4.22          TCP      74     1010 → 56264 [SYN, ACK] Seq=0 Ack=1 Win=64768 Len=0 MSS=1420 SACK_PERM TSval=1049049126 TSecr=3944737471 WS=128
+
+Frame 2: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56264, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.058182       192.168.4.22          104.154.89.105        TCP      66     56264 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=0 TSval=3944737530 TSecr=1049049126
+
+Frame 3: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.059174       192.168.4.22          104.154.89.105        TCP      1474   56264 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=1408 TSval=3944737531 TSecr=1049049126 [TCP PDU reassembled in 5]
+
+Frame 4: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1, Ack: 1, Len: 1408
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.059215       192.168.4.22          104.154.89.105        TLSv1    419    Client Hello (SNI=tls-v1-0.badssl.com)
+
+Frame 5: 419 bytes on wire (3352 bits), 419 bytes captured (3352 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1409, Ack: 1, Len: 353
+[2 Reassembled TCP Segments (1761 bytes): #4(1408), #5(353)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.118429       104.154.89.105        192.168.4.22          TCP      66     1010 → 56264 [ACK] Seq=1 Ack=1762 Win=63616 Len=0 TSval=1049049186 TSecr=3944737531
+
+Frame 6: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56264, Seq: 1, Ack: 1762, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.123997       104.154.89.105        192.168.4.22          TLSv1    1474   Server Hello
+
+Frame 7: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56264, Seq: 1, Ack: 1762, Len: 1408
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.124002       104.154.89.105        192.168.4.22          TLSv1    1474   Certificate
+
+Frame 8: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56264, Seq: 1409, Ack: 1762, Len: 1408
+[2 Reassembled TCP Segments (2579 bytes): #7(1323), #8(1256)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.124004       104.154.89.105        192.168.4.22          TLSv1    259    Server Key Exchange, Server Hello Done
+
+Frame 9: 259 bytes on wire (2072 bits), 259 bytes captured (2072 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56264, Seq: 2817, Ack: 1762, Len: 193
+[2 Reassembled TCP Segments (336 bytes): #8(152), #9(184)]
+Transport Layer Security
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.124330       192.168.4.22          104.154.89.105        TCP      66     56264 → 1010 [ACK] Seq=1762 Ack=1409 Win=130944 Len=0 TSval=3944737596 TSecr=1049049191
+
+Frame 10: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1762, Ack: 1409, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.124418       192.168.4.22          104.154.89.105        TCP      66     56264 → 1010 [ACK] Seq=1762 Ack=3010 Win=129280 Len=0 TSval=3944737596 TSecr=1049049192
+
+Frame 11: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1762, Ack: 3010, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.124674       192.168.4.22          104.154.89.105        TLSv1    73     Alert (Level: Fatal, Description: Protocol Version)
+
+Frame 12: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1762, Ack: 3010, Len: 7
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.124959       192.168.4.22          104.154.89.105        TCP      66     56264 → 1010 [FIN, ACK] Seq=1769 Ack=3010 Win=131072 Len=0 TSval=3944737596 TSecr=1049049192
+
+Frame 13: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1769, Ack: 3010, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.125597       192.168.4.22          104.154.89.105        TCP      78     56265 → 1010 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=64 TSval=3211253093 TSecr=0 SACK_PERM
+
+Frame 14: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.182612       104.154.89.105        192.168.4.22          TCP      74     1010 → 56265 [SYN, ACK] Seq=0 Ack=1 Win=64768 Len=0 MSS=1420 SACK_PERM TSval=1049049250 TSecr=3211253093 WS=128
+
+Frame 15: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56265, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.182615       104.154.89.105        192.168.4.22          TCP      66     1010 → 56264 [FIN, ACK] Seq=3010 Ack=1770 Win=64128 Len=0 TSval=1049049250 TSecr=3944737596
+
+Frame 16: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56264, Seq: 3010, Ack: 1770, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 0.182982       192.168.4.22          104.154.89.105        TCP      66     56265 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=0 TSval=3211253151 TSecr=1049049250
+
+Frame 17: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 0.183161       192.168.4.22          104.154.89.105        TCP      66     56264 → 1010 [ACK] Seq=1770 Ack=3011 Win=131072 Len=0 TSval=3944737655 TSecr=1049049250
+
+Frame 18: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56264, Dst Port: 1010, Seq: 1770, Ack: 3011, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 0.183630       192.168.4.22          104.154.89.105        TCP      1474   56265 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=1408 TSval=3211253151 TSecr=1049049250 [TCP PDU reassembled in 20]
+
+Frame 19: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1, Ack: 1, Len: 1408
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 0.183646       192.168.4.22          104.154.89.105        TLSv1    419    Client Hello (SNI=tls-v1-0.badssl.com)
+
+Frame 20: 419 bytes on wire (3352 bits), 419 bytes captured (3352 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1409, Ack: 1, Len: 353
+[2 Reassembled TCP Segments (1761 bytes): #19(1408), #20(353)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 0.243374       104.154.89.105        192.168.4.22          TCP      66     1010 → 56265 [ACK] Seq=1 Ack=1762 Win=63616 Len=0 TSval=1049049311 TSecr=3211253151
+
+Frame 21: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56265, Seq: 1, Ack: 1762, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 0.244462       104.154.89.105        192.168.4.22          TLSv1    1474   Server Hello
+
+Frame 22: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56265, Seq: 1, Ack: 1762, Len: 1408
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 0.244463       104.154.89.105        192.168.4.22          TLSv1    1474   Certificate
+
+Frame 23: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56265, Seq: 1409, Ack: 1762, Len: 1408
+[2 Reassembled TCP Segments (2579 bytes): #22(1323), #23(1256)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 0.244464       104.154.89.105        192.168.4.22          TLSv1    259    Server Key Exchange, Server Hello Done
+
+Frame 24: 259 bytes on wire (2072 bits), 259 bytes captured (2072 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56265, Seq: 2817, Ack: 1762, Len: 193
+[2 Reassembled TCP Segments (336 bytes): #23(152), #24(184)]
+Transport Layer Security
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 0.244539       192.168.4.22          104.154.89.105        TCP      66     56265 → 1010 [ACK] Seq=1762 Ack=1409 Win=130944 Len=0 TSval=3211253212 TSecr=1049049312
+
+Frame 25: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1762, Ack: 1409, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 0.244596       192.168.4.22          104.154.89.105        TCP      66     56265 → 1010 [ACK] Seq=1762 Ack=2817 Win=129536 Len=0 TSval=3211253212 TSecr=1049049312
+
+Frame 26: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1762, Ack: 2817, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 0.244607       192.168.4.22          104.154.89.105        TCP      66     56265 → 1010 [ACK] Seq=1762 Ack=3010 Win=129280 Len=0 TSval=3211253212 TSecr=1049049313
+
+Frame 27: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1762, Ack: 3010, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 0.244691       192.168.4.22          104.154.89.105        TLSv1    73     Alert (Level: Fatal, Description: Protocol Version)
+
+Frame 28: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1762, Ack: 3010, Len: 7
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 0.244773       192.168.4.22          104.154.89.105        TCP      66     56265 → 1010 [FIN, ACK] Seq=1769 Ack=3010 Win=131072 Len=0 TSval=3211253212 TSecr=1049049313
+
+Frame 29: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1769, Ack: 3010, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 0.305498       104.154.89.105        192.168.4.22          TCP      66     1010 → 56265 [FIN, ACK] Seq=3010 Ack=1770 Win=64128 Len=0 TSval=1049049373 TSecr=3211253212
+
+Frame 30: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56265, Seq: 3010, Ack: 1770, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 0.305637       192.168.4.22          104.154.89.105        TCP      66     56265 → 1010 [ACK] Seq=1770 Ack=3011 Win=131072 Len=0 TSval=3211253273 TSecr=1049049373
+
+Frame 31: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56265, Dst Port: 1010, Seq: 1770, Ack: 3011, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 1.277275       192.168.4.22          104.154.89.105        TCP      78     56266 → 1010 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=64 TSval=1449131414 TSecr=0 SACK_PERM
+
+Frame 32: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 1.337760       104.154.89.105        192.168.4.22          TCP      74     1010 → 56266 [SYN, ACK] Seq=0 Ack=1 Win=64768 Len=0 MSS=1420 SACK_PERM TSval=1049050402 TSecr=1449131414 WS=128
+
+Frame 33: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56266, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 1.337895       192.168.4.22          104.154.89.105        TCP      66     56266 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=0 TSval=1449131475 TSecr=1049050402
+
+Frame 34: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 1.338091       192.168.4.22          104.154.89.105        TCP      1474   56266 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=1408 TSval=1449131475 TSecr=1049050402 [TCP PDU reassembled in 36]
+
+Frame 35: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1, Ack: 1, Len: 1408
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 1.338111       192.168.4.22          104.154.89.105        TLSv1    451    Client Hello (SNI=tls-v1-0.badssl.com)
+
+Frame 36: 451 bytes on wire (3608 bits), 451 bytes captured (3608 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1409, Ack: 1, Len: 385
+[2 Reassembled TCP Segments (1793 bytes): #35(1408), #36(385)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 1.399455       104.154.89.105        192.168.4.22          TCP      66     1010 → 56266 [ACK] Seq=1 Ack=1794 Win=63616 Len=0 TSval=1049050463 TSecr=1449131475
+
+Frame 37: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56266, Seq: 1, Ack: 1794, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 1.400604       104.154.89.105        192.168.4.22          TLSv1    1474   Server Hello
+
+Frame 38: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56266, Seq: 1, Ack: 1794, Len: 1408
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 1.400605       104.154.89.105        192.168.4.22          TLSv1    1474   Certificate
+
+Frame 39: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56266, Seq: 1409, Ack: 1794, Len: 1408
+[2 Reassembled TCP Segments (2579 bytes): #38(1323), #39(1256)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 1.400606       104.154.89.105        192.168.4.22          TLSv1    259    Server Key Exchange, Server Hello Done
+
+Frame 40: 259 bytes on wire (2072 bits), 259 bytes captured (2072 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56266, Seq: 2817, Ack: 1794, Len: 193
+[2 Reassembled TCP Segments (336 bytes): #39(152), #40(184)]
+Transport Layer Security
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 1.400696       192.168.4.22          104.154.89.105        TCP      66     56266 → 1010 [ACK] Seq=1794 Ack=1409 Win=130944 Len=0 TSval=1449131537 TSecr=1049050464
+
+Frame 41: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1794, Ack: 1409, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 1.400751       192.168.4.22          104.154.89.105        TCP      66     56266 → 1010 [ACK] Seq=1794 Ack=2817 Win=129536 Len=0 TSval=1449131537 TSecr=1049050464
+
+Frame 42: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1794, Ack: 2817, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 1.400817       192.168.4.22          104.154.89.105        TCP      66     56266 → 1010 [ACK] Seq=1794 Ack=3010 Win=129280 Len=0 TSval=1449131537 TSecr=1049050465
+
+Frame 43: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1794, Ack: 3010, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 1.400819       192.168.4.22          104.154.89.105        TLSv1    73     Alert (Level: Fatal, Description: Protocol Version)
+
+Frame 44: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1794, Ack: 3010, Len: 7
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 1.400866       192.168.4.22          104.154.89.105        TCP      66     56266 → 1010 [FIN, ACK] Seq=1801 Ack=3010 Win=131072 Len=0 TSval=1449131537 TSecr=1049050465
+
+Frame 45: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1801, Ack: 3010, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 1.401008       192.168.4.22          104.154.89.105        TCP      78     56267 → 1010 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=64 TSval=3858797683 TSecr=0 SACK_PERM
+
+Frame 46: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 1.462652       104.154.89.105        192.168.4.22          TCP      74     1010 → 56267 [SYN, ACK] Seq=0 Ack=1 Win=64768 Len=0 MSS=1420 SACK_PERM TSval=1049050527 TSecr=3858797683 WS=128
+
+Frame 47: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56267, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 1.462835       192.168.4.22          104.154.89.105        TCP      66     56267 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=0 TSval=3858797746 TSecr=1049050527
+
+Frame 48: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 1.463125       192.168.4.22          104.154.89.105        TCP      1474   56267 → 1010 [ACK] Seq=1 Ack=1 Win=132352 Len=1408 TSval=3858797746 TSecr=1049050527 [TCP PDU reassembled in 50]
+
+Frame 49: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1, Ack: 1, Len: 1408
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 1.463145       192.168.4.22          104.154.89.105        TLSv1    387    Client Hello (SNI=tls-v1-0.badssl.com)
+
+Frame 50: 387 bytes on wire (3096 bits), 387 bytes captured (3096 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1409, Ack: 1, Len: 321
+[2 Reassembled TCP Segments (1729 bytes): #49(1408), #50(321)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 1.463423       104.154.89.105        192.168.4.22          TCP      66     1010 → 56266 [FIN, ACK] Seq=3010 Ack=1802 Win=64128 Len=0 TSval=1049050527 TSecr=1449131537
+
+Frame 51: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56266, Seq: 3010, Ack: 1802, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 1.463514       192.168.4.22          104.154.89.105        TCP      66     56266 → 1010 [ACK] Seq=1802 Ack=3011 Win=131072 Len=0 TSval=1449131600 TSecr=1049050527
+
+Frame 52: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56266, Dst Port: 1010, Seq: 1802, Ack: 3011, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 1.520399       104.154.89.105        192.168.4.22          TCP      66     1010 → 56267 [ACK] Seq=1 Ack=1730 Win=63616 Len=0 TSval=1049050588 TSecr=3858797746
+
+Frame 53: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56267, Seq: 1, Ack: 1730, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 1.521338       104.154.89.105        192.168.4.22          TLSv1    1474   Server Hello
+
+Frame 54: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56267, Seq: 1, Ack: 1730, Len: 1408
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 1.521340       104.154.89.105        192.168.4.22          TLSv1    1474   Certificate
+
+Frame 55: 1474 bytes on wire (11792 bits), 1474 bytes captured (11792 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56267, Seq: 1409, Ack: 1730, Len: 1408
+[2 Reassembled TCP Segments (2579 bytes): #54(1323), #55(1256)]
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 1.521455       192.168.4.22          104.154.89.105        TCP      66     56267 → 1010 [ACK] Seq=1730 Ack=1409 Win=130944 Len=0 TSval=3858797803 TSecr=1049050590
+
+Frame 56: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1730, Ack: 1409, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 1.521528       192.168.4.22          104.154.89.105        TCP      66     56267 → 1010 [ACK] Seq=1730 Ack=2817 Win=129536 Len=0 TSval=3858797803 TSecr=1049050590
+
+Frame 57: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1730, Ack: 2817, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 1.521573       192.168.4.22          104.154.89.105        TLSv1    73     Alert (Level: Fatal, Description: Protocol Version)
+
+Frame 58: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1730, Ack: 2817, Len: 7
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 1.521679       192.168.4.22          104.154.89.105        TCP      66     56267 → 1010 [FIN, ACK] Seq=1737 Ack=2817 Win=131072 Len=0 TSval=3858797804 TSecr=1049050590
+
+Frame 59: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1737, Ack: 2817, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 1.523823       104.154.89.105        192.168.4.22          TLSv1    259    Server Key Exchange, Server Hello Done
+
+Frame 60: 259 bytes on wire (2072 bits), 259 bytes captured (2072 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56267, Seq: 2817, Ack: 1730, Len: 193
+[2 Reassembled TCP Segments (336 bytes): #55(152), #60(184)]
+Transport Layer Security
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 1.524079       192.168.4.22          104.154.89.105        TCP      54     56267 → 1010 [RST] Seq=1730 Win=0 Len=0
+
+Frame 61: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1730, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 1.578629       104.154.89.105        192.168.4.22          TCP      66     1010 → 56267 [FIN, ACK] Seq=3010 Ack=1737 Win=64128 Len=0 TSval=1049050646 TSecr=3858797804
+
+Frame 62: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56267, Seq: 3010, Ack: 1737, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 1.578974       192.168.4.22          104.154.89.105        TCP      54     56267 → 1010 [RST] Seq=1737 Win=0 Len=0
+
+Frame 63: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1737, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 1.581413       104.154.89.105        192.168.4.22          TCP      66     1010 → 56267 [ACK] Seq=3011 Ack=1738 Win=64128 Len=0 TSval=1049050649 TSecr=3858797804
+
+Frame 64: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface en0, id 0
+Ethernet II, Src: eero_21:1d:92 (20:be:cd:21:1d:92), Dst: Apple_5f:48:ec (f4:d4:88:5f:48:ec)
+Internet Protocol Version 4, Src: 104.154.89.105, Dst: 192.168.4.22
+Transmission Control Protocol, Src Port: 1010, Dst Port: 56267, Seq: 3011, Ack: 1738, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 1.581656       192.168.4.22          104.154.89.105        TCP      54     56267 → 1010 [RST] Seq=1738 Win=0 Len=0
+
+Frame 65: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface en0, id 0
+Ethernet II, Src: Apple_5f:48:ec (f4:d4:88:5f:48:ec), Dst: eero_21:1d:92 (20:be:cd:21:1d:92)
+Internet Protocol Version 4, Src: 192.168.4.22, Dst: 104.154.89.105
+Transmission Control Protocol, Src Port: 56267, Dst Port: 1010, Seq: 1738, Len: 0

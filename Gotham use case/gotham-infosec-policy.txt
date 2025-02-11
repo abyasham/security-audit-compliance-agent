@@ -1,0 +1,105 @@
+# Gotham Ltd. Information Security Regulatory Policy
+
+## SECTION 1: REGULATORY FRAMEWORK
+
+1.1 Regulatory Mandate
+    1.1.1 All personnel shall comply with this Information Security Policy without exception.
+    1.1.2 Non-compliance shall result in disciplinary action up to and including termination of employment.
+
+1.2 Normative References
+    1.2.1 This policy shall be interpreted in conjunction with:
+        a) NIST SP 800-53 Security Controls
+        b) ISO 27001:2022 Information Security Standards
+        c) Indonesia Personal Data Protection Act
+        d) General Data Protection Regulation
+
+## SECTION 2: ORGANIZATIONAL PROFILE
+
+2.1 Organizational Identification
+    2.1.1 The entity shall be identified as Gotham Ltd.
+    2.1.2 Primary business activities shall be limited to automotive spare parts manufacturing.
+
+2.2 Operational Jurisdiction
+    2.2.1 The policy shall govern operations across:
+        a) Headquarters in Jakarta
+        b) Branch offices in Bandung and Surabaya
+        c) Manufacturing facility in Bogor
+        d) All digital and physical assets
+
+## SECTION 3: RISK MANAGEMENT PROTOCOL
+
+3.1 Risk Identification Directive
+    3.1.1 Organizational risk assessments shall:
+        a) Conduct comprehensive threat analyses bi-annually
+        b) Document all identified potential vulnerabilities
+        c) Develop mitigation strategies for each identified risk
+
+3.2 Risk Classification Mechanism
+    3.2.1 Risks shall be classified by:
+        a) Probability of occurrence
+        b) Potential financial impact
+        c) Operational disruption potential
+
+## SECTION 4: PERSONNEL SECURITY REGULATIONS
+
+4.1 Recruitment Security Protocols
+    4.1.1 All potential employees shall undergo:
+        a) Comprehensive background verification
+        b) Security clearance assessment
+        c) Mandatory confidentiality agreement execution
+
+4.2 Access Control Regulations
+    4.2.1 System access shall be:
+        a) Granted solely based on job-specific requirements
+        b) Reviewed quarterly
+        c) Immediately revoked upon employment termination
+
+## SECTION 5: TECHNICAL SECURITY MANDATES
+
+5.1 Network Protection Directive
+    5.1.1 Network security shall mandate:
+        a) Malicious packet detection threshold at 20% of total traffic
+        b) Continuous monitoring intervals of 5 minutes
+        c) Immediate automated response to threshold breaches
+
+5.2 Encryption Compliance
+    5.2.1 All communication channels shall:
+        a) Implement TLS 1.3 minimum
+        b) Use approved cryptographic cipher suites
+        c) Undergo mandatory annual certificate rotation
+
+## SECTION 6: INCIDENT RESPONSE PROTOCOL
+
+6.1 Incident Classification Directive
+    6.1.1 Security incidents shall be classified by:
+        a) Severity level
+        b) Potential organizational impact
+        c) Required immediate response actions
+
+6.2 Reporting Compliance
+    6.2.1 Incident reporting shall adhere to strict timelines:
+        a) Critical incidents: Reporting within 1 hour
+        b) High-severity incidents: Reporting within 4 hours
+        c) Medium-severity incidents: Reporting within 24 hours
+
+## SECTION 7: ENFORCEMENT MECHANISMS
+
+7.1 Compliance Enforcement
+    7.1.1 Non-compliance consequences shall include:
+        a) Formal written warnings
+        b) Mandatory additional security training
+        c) Potential employment termination
+
+7.2 Audit Protocols
+    7.2.1 Security assessments shall be conducted:
+        a) Quarterly internal comprehensive audits
+        b) Annual external compliance reviews
+        c) Unannounced periodic spot checks
+
+Approved by:
+[Executive Name]
+Chief Information Security Officer
+Gotham Ltd.
+
+*Effective Date: [Current Date]*
+*Regulatory Version: 6.0*
