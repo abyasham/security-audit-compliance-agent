@@ -31,7 +31,13 @@ streamlit run pdf_rag.py
 Second attempt on SACA, focusing on better enbedding models to chat with documents and manage it in your local database/repository.
 
 * Pre-requisites
-Install Ollama on your local machine from the [official website](https://ollama.com/). And then pull the Deepseek model:
+Install Ollama on your local machine from the [official website](https://ollama.com/). And then pull the
+Security audit compliance analysis
+PCAP file processing and analysis
+Policy document comparison
+Multiple LLM model support (Lily Cybersecurity, Ollama, Hugging Face)
+Interactive chat interface
+Vector database for document storage Deepseek model:
 
 ollama pull deepseek-r1:14b
 
@@ -57,9 +63,21 @@ Run the upload.py to convert your selected type files (pdf, csv, json, txt) into
 python run upload.py
 Run localrag.py to chat with your documents :
 
+Security audit compliance analysis
+PCAP file processing and analysis
+Policy document comparison
+Multiple LLM model support (Lily Cybersecurity, Ollama, Hugging Face)
+Interactive chat interface
+Vector database for document storage
 python run localrag.py
+Security audit compliance analysis
+PCAP file processing and analysis
+Policy document comparison
+Multiple LLM model support (Lily Cybersecurity, Ollama, Hugging Face)
+Interactive chat interface
+Vector database for document storage
 
-* SACA 11 (HexLiliy)
+# SACA 11 (HexLiliy)
 The newest development for SACA is [SACA11_HexLily](https://github.com/abyasham/security-audit-compliance-agent/tree/main/saca11_hexlily) which has utilized Hexdump?Binary parsing for embeddings, customized retrieval technique and the option to use [Lily-Cybersecurity] LLM (https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) beside the Deepseek LLM. It features the following:
 - Security audit compliance analysis
 - PCAP file processing and analysis
