@@ -22,6 +22,12 @@ Install the dependencies using pip:
 
 pip install -r requirements.txt
 
+Security audit compliance analysis
+PCAP file processing and analysis
+Policy document comparison
+Multiple LLM model support (Lily Cybersecurity, Ollama, Hugging Face)
+Interactive chat interface
+Vector database for document storage
 * Run
 Run the Streamlit app:
 
@@ -78,7 +84,7 @@ Interactive chat interface
 Vector database for document storage
 
 # SACA 11 (HexLiliy)
-The newest development for SACA is [SACA11_HexLily](https://github.com/abyasham/security-audit-compliance-agent/tree/main/saca11_hexlily) which has utilized Hexdump?Binary parsing for embeddings, customized retrieval technique and the option to use [Lily-Cybersecurity] LLM (https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) beside the Deepseek LLM. It features the following:
+The newest development for SACA is [SACA11_HexLily](https://github.com/abyasham/security-audit-compliance-agent/tree/main/saca11_hexlily) which has utilized PCAP Hexdump/Binary parsing for embeddings, customized retrieval technique and the option to use [Lily-Cybersecurity] LLM (https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) beside the Deepseek LLM. It features the following:
 - Security audit compliance analysis
 - PCAP file processing and analysis
 - Policy document comparison
