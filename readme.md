@@ -84,7 +84,7 @@ Interactive chat interface
 Vector database for document storage
 
 # SACA 11 (HexLily)
-The newest development for SACA is [SACA11_HexLily](https://github.com/abyasham/security-audit-compliance-agent/tree/main/saca11_hexlily), which has utilised PCAP Hexdump/Binary parsing for embeddings, a customised retrieval technique and the option to use [Lily-Cybersecurity] LLM (https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) besides the Deepseek LLM. It features the following:
+The newest development for SACA is [SACA11_HexLily](https://github.com/abyasham/security-audit-compliance-agent/tree/main/saca11_hexlily), which has utilised PCAP Hexdump/Binary parsing for embeddings, a customised retrieval technique and the option to use [Lily-Cybersecurity](https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) LLM besides the Deepseek LLM. It features the following:
 - Security audit compliance analysis
 - PCAP file processing and analysis
 - Policy document comparison
