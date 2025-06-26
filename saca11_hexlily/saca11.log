@@ -1,0 +1,903 @@
+2025-06-11 21:42:06,914 - INFO - SACA Modular Application Starting...
+2025-06-11 21:42:06,914 - INFO - Configuration validated successfully
+2025-06-11 21:42:10,569 - INFO - tshark is available for PCAP processing
+2025-06-11 21:42:10,637 - INFO - Starting Streamlit UI...
+2025-06-11 21:42:11,016 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 21:42:14,332 - INFO - SACA Modular Application Starting...
+2025-06-11 21:42:14,332 - INFO - Configuration validated successfully
+2025-06-11 21:42:14,449 - INFO - tshark is available for PCAP processing
+2025-06-11 21:42:14,450 - INFO - Starting Streamlit UI...
+2025-06-11 21:42:21,747 - INFO - SACA Modular Application Starting...
+2025-06-11 21:42:21,747 - INFO - Configuration validated successfully
+2025-06-11 21:42:21,870 - INFO - tshark is available for PCAP processing
+2025-06-11 21:42:21,870 - INFO - Starting Streamlit UI...
+2025-06-11 21:42:27,196 - INFO - SACA Modular Application Starting...
+2025-06-11 21:42:27,196 - INFO - Configuration validated successfully
+2025-06-11 21:42:27,313 - INFO - tshark is available for PCAP processing
+2025-06-11 21:42:27,314 - INFO - Starting Streamlit UI...
+2025-06-11 21:42:29,200 - INFO - SACA Modular Application Starting...
+2025-06-11 21:42:29,200 - INFO - Configuration validated successfully
+2025-06-11 21:42:29,318 - INFO - tshark is available for PCAP processing
+2025-06-11 21:42:29,318 - INFO - Starting Streamlit UI...
+2025-06-11 21:42:29,505 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 21:42:31,439 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-11 21:42:31,940 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 21:42:51,965 - INFO - SACA Modular Application Starting...
+2025-06-11 21:42:51,965 - INFO - Configuration validated successfully
+2025-06-11 21:42:52,092 - INFO - tshark is available for PCAP processing
+2025-06-11 21:42:52,092 - INFO - Starting Streamlit UI...
+2025-06-11 21:42:52,271 - INFO - Log database contains 1 items
+2025-06-11 21:42:52,271 - INFO - Generated base queries: ['Identify log events that potentially violate cybersecurity policies', 'Find suspicious network activities in logs', 'Detect unauthorized access attempts in logs', 'Identify data exfiltration evidence in logs', 'Find policy violations related to authentication in logs']
+2025-06-11 21:42:52,271 - INFO - Retrieving log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 21:42:52,305 - INFO - Retrieved 5 log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 21:42:52,306 - INFO - Retrieving log chunks for query: Find suspicious network activities in logs
+2025-06-11 21:42:52,321 - INFO - Retrieved 5 log chunks for query: Find suspicious network activities in logs
+2025-06-11 21:42:52,321 - INFO - Retrieving log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 21:42:52,334 - INFO - Retrieved 5 log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 21:42:52,334 - INFO - Retrieving log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 21:42:52,347 - INFO - Retrieved 5 log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 21:42:52,347 - INFO - Retrieving log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 21:42:52,361 - INFO - Retrieved 5 log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 21:42:52,361 - INFO - Generated policy query: Find policies relevant to: 59:64:dd:0f:14:02:89:09:ba:d7:b8:8b:e3:ce:71:dc:c9:e6:34:4e:55:ad:7e:45:e2:d8:3e:07:f5:7a:07:c1:e0:80:79:40:bf:e7:8e:36:49:b5:35:d2:b1:81:fe:87:cc:c4:40:cd:53:23:d5:35:50:2b:fe:c8:1a:c5:db:e3:48:e6:a3:ed:70:cd:ba:74:7b:34:aa:8d:ff:56:4d:c8:8e:ab:47:2e:04:33:ea:79:06:3d:f3:69:fa:06:66:2b:9b:06:7e:1a:13:3f:30:7e:49:cb:b2:51:c2:1b:c1:2b:66:ae:4c:68:ba:13:83:48:9a:34:66:01:aa:05:1e:10:d2:de:64:2f:ae:89:6e:22:73:8e:a7:b3:37:1f:16:1f:6f:26:c5:42:ce:af:86:67:5f:2c:df:af:e8:bb:79:78:7b:2a:83:f5:c3:be:b0 30:d2:9b:aa:3c:73:4f:bd:cc:75:95:6f:34:a3:7b:4b:0a:65:6b:1d:10:e6:c3:40:77:85:93:83:2b:6f:f3:d6:73:ae:70:49:e3:20:22:19:c8:cb:91:01:72:a7:28:36:c6:37:4b:c5:97:1a:15:79:78:1d:4b:1d:13:4c:e3:7e:41:d6:54:26:7a:b7:41:03:11:72:af:75:37:b6:8a:49:f0:ca:c0:ec:fe:e3:69:4a:80:7e:cf:a5:6b:ba:ae:da:c9:dd:98:4a:67:5f:e5:a7:76:51:cd:3c:9f:46:4b:03:eb:d0:df:d7:b3:51:98:8a:0a:15:8d:2a:51:0b:3b:b4:a9:77:ef:da:1f:48:4c:2f:f3:4b:0e:66:2c:9f:71:06:d9:9e:9d:b4:1a:16:87:9e:52:72:b9:08:51:da:fa:f3:1c:12:73:68:85:4e:55 e:e4:9c:18:84:e5:dd:33:83:4d:b9:a2:f7:22:10:0f:4f:61:c8:19:39:d9:66:ba:19:96:80:7c:e4:81:65:49:c9:11:ba:b9:98:3b:49:3a:37:6f:03:0d:82:0f:77:8e:6c:7f:ea:1f:b6:ed:c7:f7:aa:de:c0:01:b9:c2:41:d4:b3:ee:4d:92:f1:b5:db:3c:fe:81:a5:77:a7:a3:2f:33:1c:68:a4:89:b7:d4:2d:cb:c9:41:27:35:ff:99:02:25:dc:ba:b3:4e:39:67:a8:dd:5a:70:1e:22:d5:2c:28:66:11:5a:9a:74:7f:1d:f3:22:03:8f:eb:ea:82:a2:9a:6c:58:47:09:d9:45:c4:1c:80:c5:13:e3:45:82:8e:9d:f9:d5:3e:0a:01:32:3f:77:55:3b:30:87:8e:4f:a1:3d:c8:64:98:52:79:be:51:3e:
+2025-06-11 21:42:52,388 - INFO - Retrieved 4 policy chunks
+2025-06-11 21:42:52,388 - INFO - Building enhanced prompt for compliance analysis
+2025-06-11 21:42:52,388 - INFO - Invoking LLM for compliance analysis...
+2025-06-11 21:43:06,726 - INFO - LLM invocation completed successfully
+2025-06-11 21:44:10,862 - INFO - SACA Modular Application Starting...
+2025-06-11 21:44:10,862 - INFO - Configuration validated successfully
+2025-06-11 21:44:10,972 - INFO - tshark is available for PCAP processing
+2025-06-11 21:44:10,972 - INFO - Starting Streamlit UI...
+2025-06-11 21:44:28,499 - INFO - SACA Modular Application Starting...
+2025-06-11 21:44:28,500 - INFO - Configuration validated successfully
+2025-06-11 21:44:28,607 - INFO - tshark is available for PCAP processing
+2025-06-11 21:44:28,607 - INFO - Starting Streamlit UI...
+2025-06-11 21:45:24,503 - INFO - SACA Modular Application Starting...
+2025-06-11 21:45:24,504 - INFO - Configuration validated successfully
+2025-06-11 21:45:24,620 - INFO - tshark is available for PCAP processing
+2025-06-11 21:45:24,620 - INFO - Starting Streamlit UI...
+2025-06-11 21:51:26,607 - INFO - SACA Modular Application Starting...
+2025-06-11 21:51:26,607 - INFO - Configuration validated successfully
+2025-06-11 21:51:30,205 - INFO - tshark is available for PCAP processing
+2025-06-11 21:51:30,258 - INFO - Starting Streamlit UI...
+2025-06-11 21:51:30,654 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 21:51:41,753 - INFO - SACA Modular Application Starting...
+2025-06-11 21:51:41,753 - INFO - Configuration validated successfully
+2025-06-11 21:51:41,869 - INFO - tshark is available for PCAP processing
+2025-06-11 21:51:41,869 - INFO - Starting Streamlit UI...
+2025-06-11 21:51:46,580 - INFO - SACA Modular Application Starting...
+2025-06-11 21:51:46,581 - INFO - Configuration validated successfully
+2025-06-11 21:51:46,694 - INFO - tshark is available for PCAP processing
+2025-06-11 21:51:46,695 - INFO - Starting Streamlit UI...
+2025-06-11 21:51:52,182 - INFO - SACA Modular Application Starting...
+2025-06-11 21:51:52,182 - INFO - Configuration validated successfully
+2025-06-11 21:51:52,297 - INFO - tshark is available for PCAP processing
+2025-06-11 21:51:52,297 - INFO - Starting Streamlit UI...
+2025-06-11 21:51:54,094 - INFO - SACA Modular Application Starting...
+2025-06-11 21:51:54,094 - INFO - Configuration validated successfully
+2025-06-11 21:51:54,219 - INFO - tshark is available for PCAP processing
+2025-06-11 21:51:54,220 - INFO - Starting Streamlit UI...
+2025-06-11 21:51:54,394 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 21:51:56,216 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-11 21:51:56,731 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 21:52:09,076 - INFO - SACA Modular Application Starting...
+2025-06-11 21:52:09,076 - INFO - Configuration validated successfully
+2025-06-11 21:52:09,186 - INFO - tshark is available for PCAP processing
+2025-06-11 21:52:09,186 - INFO - Starting Streamlit UI...
+2025-06-11 21:52:09,349 - INFO - Log database contains 1 items
+2025-06-11 21:52:09,349 - INFO - Generated base queries: ['Identify log events that potentially violate cybersecurity policies', 'Find suspicious network activities in logs', 'Detect unauthorized access attempts in logs', 'Identify data exfiltration evidence in logs', 'Find policy violations related to authentication in logs']
+2025-06-11 21:52:09,349 - INFO - Retrieving log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 21:52:09,369 - INFO - Retrieved 5 log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 21:52:09,369 - INFO - Retrieving log chunks for query: Find suspicious network activities in logs
+2025-06-11 21:52:09,383 - INFO - Retrieved 5 log chunks for query: Find suspicious network activities in logs
+2025-06-11 21:52:09,384 - INFO - Retrieving log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 21:52:09,396 - INFO - Retrieved 5 log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 21:52:09,396 - INFO - Retrieving log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 21:52:09,407 - INFO - Retrieved 5 log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 21:52:09,407 - INFO - Retrieving log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 21:52:09,419 - INFO - Retrieved 5 log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 21:52:09,419 - INFO - Generated policy query: Find policies relevant to: 59:64:dd:0f:14:02:89:09:ba:d7:b8:8b:e3:ce:71:dc:c9:e6:34:4e:55:ad:7e:45:e2:d8:3e:07:f5:7a:07:c1:e0:80:79:40:bf:e7:8e:36:49:b5:35:d2:b1:81:fe:87:cc:c4:40:cd:53:23:d5:35:50:2b:fe:c8:1a:c5:db:e3:48:e6:a3:ed:70:cd:ba:74:7b:34:aa:8d:ff:56:4d:c8:8e:ab:47:2e:04:33:ea:79:06:3d:f3:69:fa:06:66:2b:9b:06:7e:1a:13:3f:30:7e:49:cb:b2:51:c2:1b:c1:2b:66:ae:4c:68:ba:13:83:48:9a:34:66:01:aa:05:1e:10:d2:de:64:2f:ae:89:6e:22:73:8e:a7:b3:37:1f:16:1f:6f:26:c5:42:ce:af:86:67:5f:2c:df:af:e8:bb:79:78:7b:2a:83:f5:c3:be:b0 30:d2:9b:aa:3c:73:4f:bd:cc:75:95:6f:34:a3:7b:4b:0a:65:6b:1d:10:e6:c3:40:77:85:93:83:2b:6f:f3:d6:73:ae:70:49:e3:20:22:19:c8:cb:91:01:72:a7:28:36:c6:37:4b:c5:97:1a:15:79:78:1d:4b:1d:13:4c:e3:7e:41:d6:54:26:7a:b7:41:03:11:72:af:75:37:b6:8a:49:f0:ca:c0:ec:fe:e3:69:4a:80:7e:cf:a5:6b:ba:ae:da:c9:dd:98:4a:67:5f:e5:a7:76:51:cd:3c:9f:46:4b:03:eb:d0:df:d7:b3:51:98:8a:0a:15:8d:2a:51:0b:3b:b4:a9:77:ef:da:1f:48:4c:2f:f3:4b:0e:66:2c:9f:71:06:d9:9e:9d:b4:1a:16:87:9e:52:72:b9:08:51:da:fa:f3:1c:12:73:68:85:4e:55 e:e4:9c:18:84:e5:dd:33:83:4d:b9:a2:f7:22:10:0f:4f:61:c8:19:39:d9:66:ba:19:96:80:7c:e4:81:65:49:c9:11:ba:b9:98:3b:49:3a:37:6f:03:0d:82:0f:77:8e:6c:7f:ea:1f:b6:ed:c7:f7:aa:de:c0:01:b9:c2:41:d4:b3:ee:4d:92:f1:b5:db:3c:fe:81:a5:77:a7:a3:2f:33:1c:68:a4:89:b7:d4:2d:cb:c9:41:27:35:ff:99:02:25:dc:ba:b3:4e:39:67:a8:dd:5a:70:1e:22:d5:2c:28:66:11:5a:9a:74:7f:1d:f3:22:03:8f:eb:ea:82:a2:9a:6c:58:47:09:d9:45:c4:1c:80:c5:13:e3:45:82:8e:9d:f9:d5:3e:0a:01:32:3f:77:55:3b:30:87:8e:4f:a1:3d:c8:64:98:52:79:be:51:3e:
+2025-06-11 21:52:09,445 - INFO - Retrieved 4 policy chunks
+2025-06-11 21:52:09,445 - INFO - Building enhanced prompt for compliance analysis
+2025-06-11 21:52:09,445 - INFO - Invoking LLM for compliance analysis...
+2025-06-11 21:52:23,840 - INFO - LLM invocation completed successfully
+2025-06-11 21:55:03,202 - INFO - SACA Modular Application Starting...
+2025-06-11 21:55:03,202 - INFO - Configuration validated successfully
+2025-06-11 21:55:05,763 - INFO - tshark is available for PCAP processing
+2025-06-11 21:55:05,907 - INFO - Starting Streamlit UI...
+2025-06-11 21:55:06,289 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 519, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 645, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 21:55:11,118 - INFO - SACA Modular Application Starting...
+2025-06-11 21:55:11,119 - INFO - Configuration validated successfully
+2025-06-11 21:55:11,235 - INFO - tshark is available for PCAP processing
+2025-06-11 21:55:11,236 - INFO - Starting Streamlit UI...
+2025-06-11 21:55:16,962 - INFO - SACA Modular Application Starting...
+2025-06-11 21:55:16,962 - INFO - Configuration validated successfully
+2025-06-11 21:55:17,075 - INFO - tshark is available for PCAP processing
+2025-06-11 21:55:17,075 - INFO - Starting Streamlit UI...
+2025-06-11 21:55:18,964 - INFO - SACA Modular Application Starting...
+2025-06-11 21:55:18,964 - INFO - Configuration validated successfully
+2025-06-11 21:55:19,073 - INFO - tshark is available for PCAP processing
+2025-06-11 21:55:19,073 - INFO - Starting Streamlit UI...
+2025-06-11 21:55:21,773 - INFO - SACA Modular Application Starting...
+2025-06-11 21:55:21,774 - INFO - Configuration validated successfully
+2025-06-11 21:55:21,885 - INFO - tshark is available for PCAP processing
+2025-06-11 21:55:21,886 - INFO - Starting Streamlit UI...
+2025-06-11 21:55:22,050 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 21:55:23,666 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-11 21:55:23,766 - ERROR - Error initializing SACA system: '_type'
+2025-06-11 21:55:23,916 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 519, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 645, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 21:56:04,554 - INFO - SACA Modular Application Starting...
+2025-06-11 21:56:04,554 - INFO - Configuration validated successfully
+2025-06-11 21:56:06,659 - INFO - tshark is available for PCAP processing
+2025-06-11 21:56:06,790 - INFO - Starting Streamlit UI...
+2025-06-11 21:56:07,182 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 519, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 645, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 21:56:14,052 - INFO - SACA Modular Application Starting...
+2025-06-11 21:56:14,052 - INFO - Configuration validated successfully
+2025-06-11 21:56:14,177 - INFO - tshark is available for PCAP processing
+2025-06-11 21:56:14,177 - INFO - Starting Streamlit UI...
+2025-06-11 21:56:18,494 - INFO - SACA Modular Application Starting...
+2025-06-11 21:56:18,494 - INFO - Configuration validated successfully
+2025-06-11 21:56:18,618 - INFO - tshark is available for PCAP processing
+2025-06-11 21:56:18,618 - INFO - Starting Streamlit UI...
+2025-06-11 21:56:20,349 - INFO - SACA Modular Application Starting...
+2025-06-11 21:56:20,349 - INFO - Configuration validated successfully
+2025-06-11 21:56:20,480 - INFO - tshark is available for PCAP processing
+2025-06-11 21:56:20,480 - INFO - Starting Streamlit UI...
+2025-06-11 21:56:22,132 - INFO - SACA Modular Application Starting...
+2025-06-11 21:56:22,132 - INFO - Configuration validated successfully
+2025-06-11 21:56:22,248 - INFO - tshark is available for PCAP processing
+2025-06-11 21:56:22,248 - INFO - Starting Streamlit UI...
+2025-06-11 21:56:22,416 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 21:56:23,679 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-11 21:56:23,765 - ERROR - Error initializing SACA system: '_type'
+2025-06-11 21:56:23,916 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py:519>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 519, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 645, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/.local/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:09:39,860 - INFO - SACA Modular Application Starting...
+2025-06-11 22:09:39,861 - INFO - Configuration validated successfully
+2025-06-11 22:09:39,992 - INFO - tshark is available for PCAP processing
+2025-06-11 22:09:39,992 - INFO - Starting Streamlit UI...
+2025-06-11 22:09:40,361 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:09:49,114 - INFO - SACA Modular Application Starting...
+2025-06-11 22:09:49,115 - INFO - Configuration validated successfully
+2025-06-11 22:09:49,226 - INFO - tshark is available for PCAP processing
+2025-06-11 22:09:49,226 - INFO - Starting Streamlit UI...
+2025-06-11 22:09:54,171 - INFO - SACA Modular Application Starting...
+2025-06-11 22:09:54,171 - INFO - Configuration validated successfully
+2025-06-11 22:09:54,285 - INFO - tshark is available for PCAP processing
+2025-06-11 22:09:54,285 - INFO - Starting Streamlit UI...
+2025-06-11 22:09:56,507 - INFO - SACA Modular Application Starting...
+2025-06-11 22:09:56,507 - INFO - Configuration validated successfully
+2025-06-11 22:09:56,627 - INFO - tshark is available for PCAP processing
+2025-06-11 22:09:56,627 - INFO - Starting Streamlit UI...
+2025-06-11 22:09:57,965 - INFO - SACA Modular Application Starting...
+2025-06-11 22:09:57,965 - INFO - Configuration validated successfully
+2025-06-11 22:09:58,074 - INFO - tshark is available for PCAP processing
+2025-06-11 22:09:58,074 - INFO - Starting Streamlit UI...
+2025-06-11 22:09:58,239 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 22:10:04,259 - INFO - SACA Modular Application Starting...
+2025-06-11 22:10:04,260 - INFO - Configuration validated successfully
+2025-06-11 22:10:04,372 - INFO - tshark is available for PCAP processing
+2025-06-11 22:10:04,373 - INFO - Starting Streamlit UI...
+2025-06-11 22:10:04,529 - INFO - Log database contains 1 items
+2025-06-11 22:10:04,530 - INFO - Generated base queries: ['Identify log events that potentially violate cybersecurity policies', 'Find suspicious network activities in logs', 'Detect unauthorized access attempts in logs', 'Identify data exfiltration evidence in logs', 'Find policy violations related to authentication in logs']
+2025-06-11 22:10:04,530 - INFO - Retrieving log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 22:10:04,547 - INFO - Retrieved 5 log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 22:10:04,547 - INFO - Retrieving log chunks for query: Find suspicious network activities in logs
+2025-06-11 22:10:04,563 - INFO - Retrieved 5 log chunks for query: Find suspicious network activities in logs
+2025-06-11 22:10:04,563 - INFO - Retrieving log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 22:10:04,579 - INFO - Retrieved 5 log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 22:10:04,579 - INFO - Retrieving log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 22:10:04,593 - INFO - Retrieved 5 log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 22:10:04,593 - INFO - Retrieving log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 22:10:04,605 - INFO - Retrieved 5 log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 22:10:04,605 - INFO - Generated policy query: Find policies relevant to: 59:64:dd:0f:14:02:89:09:ba:d7:b8:8b:e3:ce:71:dc:c9:e6:34:4e:55:ad:7e:45:e2:d8:3e:07:f5:7a:07:c1:e0:80:79:40:bf:e7:8e:36:49:b5:35:d2:b1:81:fe:87:cc:c4:40:cd:53:23:d5:35:50:2b:fe:c8:1a:c5:db:e3:48:e6:a3:ed:70:cd:ba:74:7b:34:aa:8d:ff:56:4d:c8:8e:ab:47:2e:04:33:ea:79:06:3d:f3:69:fa:06:66:2b:9b:06:7e:1a:13:3f:30:7e:49:cb:b2:51:c2:1b:c1:2b:66:ae:4c:68:ba:13:83:48:9a:34:66:01:aa:05:1e:10:d2:de:64:2f:ae:89:6e:22:73:8e:a7:b3:37:1f:16:1f:6f:26:c5:42:ce:af:86:67:5f:2c:df:af:e8:bb:79:78:7b:2a:83:f5:c3:be:b0 30:d2:9b:aa:3c:73:4f:bd:cc:75:95:6f:34:a3:7b:4b:0a:65:6b:1d:10:e6:c3:40:77:85:93:83:2b:6f:f3:d6:73:ae:70:49:e3:20:22:19:c8:cb:91:01:72:a7:28:36:c6:37:4b:c5:97:1a:15:79:78:1d:4b:1d:13:4c:e3:7e:41:d6:54:26:7a:b7:41:03:11:72:af:75:37:b6:8a:49:f0:ca:c0:ec:fe:e3:69:4a:80:7e:cf:a5:6b:ba:ae:da:c9:dd:98:4a:67:5f:e5:a7:76:51:cd:3c:9f:46:4b:03:eb:d0:df:d7:b3:51:98:8a:0a:15:8d:2a:51:0b:3b:b4:a9:77:ef:da:1f:48:4c:2f:f3:4b:0e:66:2c:9f:71:06:d9:9e:9d:b4:1a:16:87:9e:52:72:b9:08:51:da:fa:f3:1c:12:73:68:85:4e:55 e:e4:9c:18:84:e5:dd:33:83:4d:b9:a2:f7:22:10:0f:4f:61:c8:19:39:d9:66:ba:19:96:80:7c:e4:81:65:49:c9:11:ba:b9:98:3b:49:3a:37:6f:03:0d:82:0f:77:8e:6c:7f:ea:1f:b6:ed:c7:f7:aa:de:c0:01:b9:c2:41:d4:b3:ee:4d:92:f1:b5:db:3c:fe:81:a5:77:a7:a3:2f:33:1c:68:a4:89:b7:d4:2d:cb:c9:41:27:35:ff:99:02:25:dc:ba:b3:4e:39:67:a8:dd:5a:70:1e:22:d5:2c:28:66:11:5a:9a:74:7f:1d:f3:22:03:8f:eb:ea:82:a2:9a:6c:58:47:09:d9:45:c4:1c:80:c5:13:e3:45:82:8e:9d:f9:d5:3e:0a:01:32:3f:77:55:3b:30:87:8e:4f:a1:3d:c8:64:98:52:79:be:51:3e:
+2025-06-11 22:10:04,631 - INFO - Retrieved 4 policy chunks
+2025-06-11 22:10:04,631 - INFO - Building enhanced prompt for compliance analysis
+2025-06-11 22:10:04,632 - INFO - Invoking LLM for compliance analysis...
+2025-06-11 22:10:19,124 - INFO - LLM invocation completed successfully
+2025-06-11 22:20:30,552 - INFO - SACA Modular Application Starting...
+2025-06-11 22:20:30,552 - INFO - Configuration validated successfully
+2025-06-11 22:20:33,922 - INFO - tshark is available for PCAP processing
+2025-06-11 22:20:33,983 - INFO - Starting Streamlit UI...
+2025-06-11 22:20:34,344 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:20:38,074 - INFO - SACA Modular Application Starting...
+2025-06-11 22:20:38,074 - INFO - Configuration validated successfully
+2025-06-11 22:20:38,194 - INFO - tshark is available for PCAP processing
+2025-06-11 22:20:38,195 - INFO - Starting Streamlit UI...
+2025-06-11 22:20:41,832 - INFO - SACA Modular Application Starting...
+2025-06-11 22:20:41,832 - INFO - Configuration validated successfully
+2025-06-11 22:20:41,948 - INFO - tshark is available for PCAP processing
+2025-06-11 22:20:41,948 - INFO - Starting Streamlit UI...
+2025-06-11 22:20:46,234 - INFO - SACA Modular Application Starting...
+2025-06-11 22:20:46,234 - INFO - Configuration validated successfully
+2025-06-11 22:20:46,356 - INFO - tshark is available for PCAP processing
+2025-06-11 22:20:46,356 - INFO - Starting Streamlit UI...
+2025-06-11 22:20:48,178 - INFO - SACA Modular Application Starting...
+2025-06-11 22:20:48,179 - INFO - Configuration validated successfully
+2025-06-11 22:20:48,288 - INFO - tshark is available for PCAP processing
+2025-06-11 22:20:48,288 - INFO - Starting Streamlit UI...
+2025-06-11 22:20:48,479 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 22:20:50,041 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-11 22:20:50,504 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:20:55,260 - INFO - SACA Modular Application Starting...
+2025-06-11 22:20:55,260 - INFO - Configuration validated successfully
+2025-06-11 22:20:55,375 - INFO - tshark is available for PCAP processing
+2025-06-11 22:20:55,375 - INFO - Starting Streamlit UI...
+2025-06-11 22:20:55,537 - INFO - Log database contains 1 items
+2025-06-11 22:20:55,537 - INFO - Generated base queries: ['Identify log events that potentially violate cybersecurity policies', 'Find suspicious network activities in logs', 'Detect unauthorized access attempts in logs', 'Identify data exfiltration evidence in logs', 'Find policy violations related to authentication in logs']
+2025-06-11 22:20:55,537 - INFO - Retrieving log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 22:20:55,558 - INFO - Retrieved 5 log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 22:20:55,558 - INFO - Retrieving log chunks for query: Find suspicious network activities in logs
+2025-06-11 22:20:55,573 - INFO - Retrieved 5 log chunks for query: Find suspicious network activities in logs
+2025-06-11 22:20:55,573 - INFO - Retrieving log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 22:20:55,587 - INFO - Retrieved 5 log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 22:20:55,587 - INFO - Retrieving log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 22:20:55,600 - INFO - Retrieved 5 log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 22:20:55,600 - INFO - Retrieving log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 22:20:55,613 - INFO - Retrieved 5 log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 22:20:55,613 - INFO - Generated policy query: Find policies relevant to: 59:64:dd:0f:14:02:89:09:ba:d7:b8:8b:e3:ce:71:dc:c9:e6:34:4e:55:ad:7e:45:e2:d8:3e:07:f5:7a:07:c1:e0:80:79:40:bf:e7:8e:36:49:b5:35:d2:b1:81:fe:87:cc:c4:40:cd:53:23:d5:35:50:2b:fe:c8:1a:c5:db:e3:48:e6:a3:ed:70:cd:ba:74:7b:34:aa:8d:ff:56:4d:c8:8e:ab:47:2e:04:33:ea:79:06:3d:f3:69:fa:06:66:2b:9b:06:7e:1a:13:3f:30:7e:49:cb:b2:51:c2:1b:c1:2b:66:ae:4c:68:ba:13:83:48:9a:34:66:01:aa:05:1e:10:d2:de:64:2f:ae:89:6e:22:73:8e:a7:b3:37:1f:16:1f:6f:26:c5:42:ce:af:86:67:5f:2c:df:af:e8:bb:79:78:7b:2a:83:f5:c3:be:b0 30:d2:9b:aa:3c:73:4f:bd:cc:75:95:6f:34:a3:7b:4b:0a:65:6b:1d:10:e6:c3:40:77:85:93:83:2b:6f:f3:d6:73:ae:70:49:e3:20:22:19:c8:cb:91:01:72:a7:28:36:c6:37:4b:c5:97:1a:15:79:78:1d:4b:1d:13:4c:e3:7e:41:d6:54:26:7a:b7:41:03:11:72:af:75:37:b6:8a:49:f0:ca:c0:ec:fe:e3:69:4a:80:7e:cf:a5:6b:ba:ae:da:c9:dd:98:4a:67:5f:e5:a7:76:51:cd:3c:9f:46:4b:03:eb:d0:df:d7:b3:51:98:8a:0a:15:8d:2a:51:0b:3b:b4:a9:77:ef:da:1f:48:4c:2f:f3:4b:0e:66:2c:9f:71:06:d9:9e:9d:b4:1a:16:87:9e:52:72:b9:08:51:da:fa:f3:1c:12:73:68:85:4e:55 e:e4:9c:18:84:e5:dd:33:83:4d:b9:a2:f7:22:10:0f:4f:61:c8:19:39:d9:66:ba:19:96:80:7c:e4:81:65:49:c9:11:ba:b9:98:3b:49:3a:37:6f:03:0d:82:0f:77:8e:6c:7f:ea:1f:b6:ed:c7:f7:aa:de:c0:01:b9:c2:41:d4:b3:ee:4d:92:f1:b5:db:3c:fe:81:a5:77:a7:a3:2f:33:1c:68:a4:89:b7:d4:2d:cb:c9:41:27:35:ff:99:02:25:dc:ba:b3:4e:39:67:a8:dd:5a:70:1e:22:d5:2c:28:66:11:5a:9a:74:7f:1d:f3:22:03:8f:eb:ea:82:a2:9a:6c:58:47:09:d9:45:c4:1c:80:c5:13:e3:45:82:8e:9d:f9:d5:3e:0a:01:32:3f:77:55:3b:30:87:8e:4f:a1:3d:c8:64:98:52:79:be:51:3e:
+2025-06-11 22:20:55,641 - INFO - Retrieved 4 policy chunks
+2025-06-11 22:20:55,642 - INFO - Building enhanced prompt for compliance analysis
+2025-06-11 22:20:55,642 - INFO - Invoking LLM for compliance analysis...
+2025-06-11 22:21:10,185 - INFO - LLM invocation completed successfully
+2025-06-11 22:22:11,617 - INFO - SACA Modular Application Starting...
+2025-06-11 22:22:11,617 - INFO - Configuration validated successfully
+2025-06-11 22:22:14,876 - INFO - tshark is available for PCAP processing
+2025-06-11 22:22:14,931 - INFO - Starting Streamlit UI...
+2025-06-11 22:22:15,286 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:22:21,306 - INFO - SACA Modular Application Starting...
+2025-06-11 22:22:21,306 - INFO - Configuration validated successfully
+2025-06-11 22:22:21,416 - INFO - tshark is available for PCAP processing
+2025-06-11 22:22:21,416 - INFO - Starting Streamlit UI...
+2025-06-11 22:22:24,682 - INFO - SACA Modular Application Starting...
+2025-06-11 22:22:24,682 - INFO - Configuration validated successfully
+2025-06-11 22:22:24,796 - INFO - tshark is available for PCAP processing
+2025-06-11 22:22:24,796 - INFO - Starting Streamlit UI...
+2025-06-11 22:22:26,935 - INFO - SACA Modular Application Starting...
+2025-06-11 22:22:26,936 - INFO - Configuration validated successfully
+2025-06-11 22:22:27,049 - INFO - tshark is available for PCAP processing
+2025-06-11 22:22:27,049 - INFO - Starting Streamlit UI...
+2025-06-11 22:22:28,015 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-06-11 22:22:52,735 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:28:00,327 - INFO - SACA Modular Application Starting...
+2025-06-11 22:28:00,327 - INFO - Configuration validated successfully
+2025-06-11 22:28:04,000 - INFO - tshark is available for PCAP processing
+2025-06-11 22:28:04,067 - INFO - Starting Streamlit UI...
+2025-06-11 22:28:04,472 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:28:24,202 - INFO - SACA Modular Application Starting...
+2025-06-11 22:28:24,202 - INFO - Configuration validated successfully
+2025-06-11 22:28:24,325 - INFO - tshark is available for PCAP processing
+2025-06-11 22:28:24,325 - INFO - Starting Streamlit UI...
+2025-06-11 22:28:28,664 - INFO - SACA Modular Application Starting...
+2025-06-11 22:28:28,664 - INFO - Configuration validated successfully
+2025-06-11 22:28:28,781 - INFO - tshark is available for PCAP processing
+2025-06-11 22:28:28,781 - INFO - Starting Streamlit UI...
+2025-06-11 22:28:31,139 - INFO - SACA Modular Application Starting...
+2025-06-11 22:28:31,139 - INFO - Configuration validated successfully
+2025-06-11 22:28:31,259 - INFO - tshark is available for PCAP processing
+2025-06-11 22:28:31,259 - INFO - Starting Streamlit UI...
+2025-06-11 22:28:32,513 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-06-11 22:28:57,435 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 22:28:59,139 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-11 22:28:59,823 - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py:518>
+Traceback (most recent call last):
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 518, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/runtime/app_session.py", line 644, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/api.py", line 312, in schedule
+    emitter.start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/utils/__init__.py", line 75, in start
+    self.on_thread_start()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+    Inotify._raise_error()
+  File "/home/abyasa/Documents/saca/saca11_hexlily/venv/lib/python3.10/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2025-06-11 22:29:07,705 - INFO - SACA Modular Application Starting...
+2025-06-11 22:29:07,705 - INFO - Configuration validated successfully
+2025-06-11 22:29:07,909 - INFO - tshark is available for PCAP processing
+2025-06-11 22:29:07,909 - INFO - Starting Streamlit UI...
+2025-06-11 22:29:08,072 - INFO - Log database contains 1 items
+2025-06-11 22:29:08,072 - INFO - Generated base queries: ['Identify log events that potentially violate cybersecurity policies', 'Find suspicious network activities in logs', 'Detect unauthorized access attempts in logs', 'Identify data exfiltration evidence in logs', 'Find policy violations related to authentication in logs']
+2025-06-11 22:29:08,072 - INFO - Retrieving log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 22:29:08,163 - INFO - Retrieved 5 log chunks for query: Identify log events that potentially violate cybersecurity policies
+2025-06-11 22:29:08,163 - INFO - Retrieving log chunks for query: Find suspicious network activities in logs
+2025-06-11 22:29:08,179 - INFO - Retrieved 5 log chunks for query: Find suspicious network activities in logs
+2025-06-11 22:29:08,179 - INFO - Retrieving log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 22:29:08,197 - INFO - Retrieved 5 log chunks for query: Detect unauthorized access attempts in logs
+2025-06-11 22:29:08,197 - INFO - Retrieving log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 22:29:08,213 - INFO - Retrieved 5 log chunks for query: Identify data exfiltration evidence in logs
+2025-06-11 22:29:08,213 - INFO - Retrieving log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 22:29:08,230 - INFO - Retrieved 5 log chunks for query: Find policy violations related to authentication in logs
+2025-06-11 22:29:08,230 - INFO - Generated policy query: Find policies relevant to: 59:64:dd:0f:14:02:89:09:ba:d7:b8:8b:e3:ce:71:dc:c9:e6:34:4e:55:ad:7e:45:e2:d8:3e:07:f5:7a:07:c1:e0:80:79:40:bf:e7:8e:36:49:b5:35:d2:b1:81:fe:87:cc:c4:40:cd:53:23:d5:35:50:2b:fe:c8:1a:c5:db:e3:48:e6:a3:ed:70:cd:ba:74:7b:34:aa:8d:ff:56:4d:c8:8e:ab:47:2e:04:33:ea:79:06:3d:f3:69:fa:06:66:2b:9b:06:7e:1a:13:3f:30:7e:49:cb:b2:51:c2:1b:c1:2b:66:ae:4c:68:ba:13:83:48:9a:34:66:01:aa:05:1e:10:d2:de:64:2f:ae:89:6e:22:73:8e:a7:b3:37:1f:16:1f:6f:26:c5:42:ce:af:86:67:5f:2c:df:af:e8:bb:79:78:7b:2a:83:f5:c3:be:b0 30:d2:9b:aa:3c:73:4f:bd:cc:75:95:6f:34:a3:7b:4b:0a:65:6b:1d:10:e6:c3:40:77:85:93:83:2b:6f:f3:d6:73:ae:70:49:e3:20:22:19:c8:cb:91:01:72:a7:28:36:c6:37:4b:c5:97:1a:15:79:78:1d:4b:1d:13:4c:e3:7e:41:d6:54:26:7a:b7:41:03:11:72:af:75:37:b6:8a:49:f0:ca:c0:ec:fe:e3:69:4a:80:7e:cf:a5:6b:ba:ae:da:c9:dd:98:4a:67:5f:e5:a7:76:51:cd:3c:9f:46:4b:03:eb:d0:df:d7:b3:51:98:8a:0a:15:8d:2a:51:0b:3b:b4:a9:77:ef:da:1f:48:4c:2f:f3:4b:0e:66:2c:9f:71:06:d9:9e:9d:b4:1a:16:87:9e:52:72:b9:08:51:da:fa:f3:1c:12:73:68:85:4e:55 e:e4:9c:18:84:e5:dd:33:83:4d:b9:a2:f7:22:10:0f:4f:61:c8:19:39:d9:66:ba:19:96:80:7c:e4:81:65:49:c9:11:ba:b9:98:3b:49:3a:37:6f:03:0d:82:0f:77:8e:6c:7f:ea:1f:b6:ed:c7:f7:aa:de:c0:01:b9:c2:41:d4:b3:ee:4d:92:f1:b5:db:3c:fe:81:a5:77:a7:a3:2f:33:1c:68:a4:89:b7:d4:2d:cb:c9:41:27:35:ff:99:02:25:dc:ba:b3:4e:39:67:a8:dd:5a:70:1e:22:d5:2c:28:66:11:5a:9a:74:7f:1d:f3:22:03:8f:eb:ea:82:a2:9a:6c:58:47:09:d9:45:c4:1c:80:c5:13:e3:45:82:8e:9d:f9:d5:3e:0a:01:32:3f:77:55:3b:30:87:8e:4f:a1:3d:c8:64:98:52:79:be:51:3e:
+2025-06-11 22:29:08,275 - INFO - Retrieved 4 policy chunks
+2025-06-11 22:29:08,275 - INFO - Building enhanced prompt for compliance analysis
+2025-06-11 22:29:08,275 - INFO - Invoking LLM for compliance analysis...
+2025-06-11 22:29:23,085 - INFO - LLM invocation completed successfully
