@@ -1,6 +1,6 @@
 # Security Audit Compliance Agent
 
-In today's digital landscape, it's no secret that companies face many compliance requirements. Certain expectations from a business are no longer up for negotiation, such as maintaining integrity, availability, data confidentiality and information security and ensuring ethical practices, especially considering the common application of AI. Compliance audits ensure these expectations are met and serve as crucial checkpoints to assess a company's adherence to specific regulatory frameworks.
+In today's digital landscape, it's no secret that companies face many compliance requirements. Certain expectations from a business are no longer up for negotiation, such as maintaining integrity, availability, data confidentiality and information security and ensuring ethical practices. Compliance audits ensure these expectations are met and serve as crucial checkpoints to assess a company's adherence to specific regulatory frameworks.
 
 AI-powered systems can capture and analyse audit trails on autopilot and provide a chronological record of activities, mitigating the risk of errors or omissions. In addition, auditors can also leverage AI to generate comprehensive prediction compliance reports, which analyse data from multiple sources and evaluate them against the critical compliance metrics. By doing so, auditors can save time and simultaneously benefit from abilities they didn’t have until now.
 
@@ -8,7 +8,7 @@ Ultimately, AI cannot and should not replace the human element that is criticall
 
 AI provides auditors with a chance to elevate their proficiency and knowledge. To stay in the game, auditors must enhance their skills and fuse their technical and interpersonal abilities. Think of it as a culmination of data analysis, critical thinking, and adept communication.
 
-SACA (Security Audit Compliance Agent) is an AI-based agent to help auditors conduct cybersecurity audits while maintaining security & privacy
+SACA (Security Audit Compliance Agent) is an AI-based agent to help auditors conduct cybersecurity audits while maintaining security & privacy.
 
 # SACA 1
 First attempt on SACA, a simple RAG (Retrieval-Augmented Generation) system using Deepseek, LangChain, and Streamlit to chat with PDFs and answer complex questions about your local documents.
